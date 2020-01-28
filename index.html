@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Chat with me</title>
+  <meta name="description" content="Chat with me github page">
+  <meta name="author" content="Felipe Matos">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                .withAppKey('bXVsdGljYW5hbDc6MTVhOWU1ZjctZmU4Ny00ZjU0LWFmMWEtNmQ1MTNlNWMwYzBi')
+                .withButton({"color":"#2CC3D5","icon":""})
+                .build();
+            }
+        })();
+    </script>    
+</body>
+</html>
