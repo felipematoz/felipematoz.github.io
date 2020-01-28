@@ -21,7 +21,7 @@
     <script>
         (function () {
             window.onload = function () {
-                new BlipChat()
+                var blipClient = new BlipChat()
                 .withAppKey('bXVsdGljYW5hbDc6MTVhOWU1ZjctZmU4Ny00ZjU0LWFmMWEtNmQ1MTNlNWMwYzBi')
                 .withButton({"color":"#2CC3D5","icon":""})
                 .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT, function () {
