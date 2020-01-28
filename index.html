@@ -16,23 +16,23 @@
 <body>
     <h1>Hello World!</h1>
 
-    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
-    </script>
+
+    <script src="https://unpkg.com/blip-chat-widget@1.6.*" type="text/javascript"></script>
     <script>
         (function () {
             window.onload = function () {
-                var blipClient = new BlipChat()
-                .withAppKey('bXVsdGljYW5hbDc6MTVhOWU1ZjctZmU4Ny00ZjU0LWFmMWEtNmQ1MTNlNWMwYzBi')
+              var blipClient = new BlipChat()
+              .withAppKey('bXVsdGljYW5hbDc6MTVhOWU1ZjctZmU4Ny00ZjU0LWFmMWEtNmQ1MTNlNWMwYzBi')
                 .withButton({"color":"#2CC3D5","icon":""})
-                .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT, function () {
-                    blipClient.sendMessage({
-                        "type": "text/plain",
-                        "content": "Hello!"
-                    });
-                })
-                .build();
+              .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT, function () {
+                  blipClient.sendMessage({
+                      "type": "text/plain",
+                      "content": "Hello Bot!"
+                  });
+              });
+              blipClient.build();
             }
         })();
-    </script>    
+    </script>   
 </body>
 </html>
